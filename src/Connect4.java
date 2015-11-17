@@ -1,7 +1,25 @@
 public class Connect4
 {
-	static char[][] gameboard = new char[6][7];
+	private static char[][] gameboard = new char[6][7];
+
 	private int column_move = -1, row_move = -1;
+
+	private static boolean gameOver = false;
+
+	public void changeGameStatus()
+	{
+		gameOver = true;
+	}
+
+	public boolean getGameStatus()
+	{
+		return gameOver;
+	}
+
+	public Connect4()
+	{
+		initialiseBoard();
+	}
 
 	public void initialiseBoard()
 	{
@@ -17,7 +35,11 @@ public class Connect4
 	public boolean enterMove(int column, char Player)
 	{
 		column--;
-		if (gameboard[5][column] == 'O')
+		if ((column > 6) || (column < 0))
+		{
+			return false;
+		}
+		else if (gameboard[5][column] == 'O')
 		{
 			for (int i = 0; i < 6; i++)
 			{
@@ -36,13 +58,28 @@ public class Connect4
 
 	public void printBoard()
 	{
-		for (int i = 5; i >= 0; i--)
+		for (int i = 5; i >= -1; i--)
 		{
 			for (int j = 0; j < 7; j++)
 			{
-				System.out.print("\t" + gameboard[i][j]);
+				if (i != -1)
+				{
+					if (j == 0)
+					{
+						System.out.print("Row [" + (i + 1) + "]\t");
+					}
+					System.out.print("\t" + gameboard[i][j]);
+				}
+				else
+				{
+					System.out.print("\t[" + (j + 1) + "]");
+				}
 			}
 			System.out.print("\n\n");
+			if (i == 0)
+			{
+				System.out.print("Column\t");
+			}
 		}
 		System.out.println("________________________________________________________________________\n\n\n");
 	}
@@ -58,7 +95,6 @@ public class Connect4
 			if (gameboard[row_move - offset][column_move] == Player)
 			{
 				count++;
-				System.out.println(count);
 				if (count == 4)
 					return true;
 			}
@@ -76,7 +112,6 @@ public class Connect4
 			if (gameboard[row_move][column_move - offset] == Player)
 			{
 				count++;
-				System.out.println(count);
 				if (count == 4)
 					return true;
 			}
@@ -91,7 +126,6 @@ public class Connect4
 			if (gameboard[row_move][column_move + offset] == Player)
 			{
 				count++;
-				System.out.println(count);
 				if (count == 4)
 					return true;
 			}
@@ -108,7 +142,6 @@ public class Connect4
 			if (gameboard[row_move + offset][column_move - offset] == Player)
 			{
 				count++;
-				System.out.println(count);
 				if (count == 4)
 					return true;
 			}
@@ -123,7 +156,6 @@ public class Connect4
 			if (gameboard[row_move - offset][column_move + offset] == Player)
 			{
 				count++;
-				System.out.println(count);
 				if (count == 4)
 					return true;
 			}
@@ -140,7 +172,6 @@ public class Connect4
 			if (gameboard[row_move + offset][column_move + offset] == Player)
 			{
 				count++;
-				System.out.println(count);
 				if (count == 4)
 					return true;
 			}
@@ -155,7 +186,6 @@ public class Connect4
 			if (gameboard[row_move - offset][column_move - offset] == Player)
 			{
 				count++;
-				System.out.println(count);
 				if (count == 4)
 					return true;
 			}

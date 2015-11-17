@@ -1,36 +1,56 @@
+import java.util.Scanner;
+
 public class Main
 {
 	public static void main(String[] args)
 	{
-		char Player1 = 'R', Player2 = 'Y';
+		char Players[] = { 'R', 'Y' };
+		int current_Player = 0;
 		Connect4 Game = new Connect4();
-		Game.initialiseBoard();
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Player 1 is red (R)\nPlayer 2 is yellow (Y)");
 		Game.printBoard();
-		Game.enterMove(1, Player1);
-		Game.enterMove(2, Player2);
-		Game.printBoard();
-		Game.enterMove(2, Player1);
-		Game.enterMove(1, Player2);
-		Game.printBoard();
-		Game.enterMove(3, Player1);
-		Game.enterMove(4, Player2);
-		Game.printBoard();
-		Game.enterMove(4, Player1);
-		Game.enterMove(3, Player2);
-		Game.printBoard();
-		Game.enterMove(3, Player1);
-		Game.enterMove(4, Player2);
-		Game.printBoard();
-		Game.enterMove(4, Player1);
-		Game.enterMove(3, Player2);
-		Game.printBoard();
-		if (Game.checkVictory(Player1))
+		while (!Game.getGameStatus())
 		{
-			System.out.println("Congratulations " + Player1);
+			int i = -1;
+			String s = null;
+			System.out.println("Player " + (current_Player + 1) + ", please enter which column you'd like to drop a counter into");
+			while (true)
+			{
+				try
+				{
+					s = scan.nextLine();
+					i = Integer.parseInt(s);
+					if (!Game.enterMove(i, Players[current_Player]))
+					{
+						System.out.println("Invalid Move. Try Again");
+					}
+					else
+					{
+						break;
+					}
+				}
+				catch (NumberFormatException ex)
+				{
+					System.out.println("Invalid Move. Try Again");
+				}
+			}
+			Game.printBoard();
+			if (Game.checkVictory(Players[current_Player]))
+			{
+				System.out.println("Congradulations Player " + (current_Player + 1));
+				Game.changeGameStatus();
+			}
+			if (current_Player == 0)
+			{
+				current_Player = 1;
+			}
+			else
+			{
+				current_Player = 0;
+			}
+
 		}
-		else
-		{
-			System.out.println("I'm retarded");
-		}
+		scan.close();
 	}
 }
