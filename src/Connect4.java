@@ -1,10 +1,8 @@
 public class Connect4
 {
 	private static char[][] gameboard = new char[6][7];
-
-	private int column_move = -1, row_move = -1;
-
 	private static boolean gameOver = false;
+	private Player CurrentPlayers[] = { new Player('R'), new Player('Y') };
 
 	public void changeGameStatus()
 	{
@@ -21,6 +19,39 @@ public class Connect4
 		initialiseBoard();
 	}
 
+	private class Player
+	{
+		private int last_row_move;
+		private int last_column_move;
+		private char player_token;
+
+		private Player(char a)
+		{
+			player_token = a;
+		}
+
+		private char getPlayerToken()
+		{
+			return player_token;
+		}
+
+		private void set_last_move(int x, int y)
+		{
+			last_row_move = x;
+			last_column_move = y;
+		}
+
+		private int get_last_row_move()
+		{
+			return last_row_move;
+		}
+
+		private int get_last_column_move()
+		{
+			return last_column_move;
+		}
+	}
+
 	public void initialiseBoard()
 	{
 		for (int i = 0; i < 6; i++)
@@ -32,7 +63,7 @@ public class Connect4
 		}
 	}
 
-	public boolean enterMove(int column, char Player)
+	public boolean enterMove(int column, int player)
 	{
 		column--;
 		if ((column > 6) || (column < 0))
@@ -45,9 +76,8 @@ public class Connect4
 			{
 				if (gameboard[i][column] == 'O')
 				{
-					row_move = i;
-					column_move = column;
-					gameboard[i][column] = Player;
+					this.CurrentPlayers[player].set_last_move(i, column);
+					gameboard[i][column] = this.CurrentPlayers[player].getPlayerToken();
 					return true;
 				}
 			}
@@ -84,15 +114,16 @@ public class Connect4
 		System.out.println("________________________________________________________________________\n\n\n");
 	}
 
-	public boolean checkVictory(char Player)
+	public boolean checkVictory(int player)
 	{
 		int count = 1, offset = 0;
 
 		//check pieces below
-		while ((row_move - offset) > 0)
+		while ((this.CurrentPlayers[player].get_last_row_move() - offset) > 0)
 		{
 			offset++;
-			if (gameboard[row_move - offset][column_move] == Player)
+			if (gameboard[this.CurrentPlayers[player].get_last_row_move() - offset][this.CurrentPlayers[player].get_last_column_move()] == this.CurrentPlayers[player]
+			        .getPlayerToken())
 			{
 				count++;
 				if (count == 4)
@@ -106,10 +137,11 @@ public class Connect4
 		count = 1;
 		offset = 0;
 		//check left
-		while ((column_move - offset) > 0)
+		while ((this.CurrentPlayers[player].get_last_column_move() - offset) > 0)
 		{
 			offset++;
-			if (gameboard[row_move][column_move - offset] == Player)
+			if (gameboard[this.CurrentPlayers[player].get_last_row_move()][this.CurrentPlayers[player].get_last_column_move() - offset] == this.CurrentPlayers[player]
+			        .getPlayerToken())
 			{
 				count++;
 				if (count == 4)
@@ -120,10 +152,11 @@ public class Connect4
 		}
 		//check right
 		offset = 0;
-		while ((column_move + offset) < 6)
+		while ((this.CurrentPlayers[player].get_last_column_move() + offset) < 6)
 		{
 			offset++;
-			if (gameboard[row_move][column_move + offset] == Player)
+			if (gameboard[this.CurrentPlayers[player].get_last_row_move()][this.CurrentPlayers[player].get_last_column_move() + offset] == this.CurrentPlayers[player]
+			        .getPlayerToken())
 			{
 				count++;
 				if (count == 4)
@@ -136,10 +169,11 @@ public class Connect4
 		count = 1;
 		offset = 0;
 		//check Top-Left
-		while (((row_move + offset) < 5) && ((column_move - offset) > 0))
+		while (((this.CurrentPlayers[player].get_last_row_move() + offset) < 5) && ((this.CurrentPlayers[player].get_last_column_move() - offset) > 0))
 		{
 			offset++;
-			if (gameboard[row_move + offset][column_move - offset] == Player)
+			if (gameboard[this.CurrentPlayers[player].get_last_row_move() + offset][this.CurrentPlayers[player].get_last_column_move() - offset] == this.CurrentPlayers[player]
+			        .getPlayerToken())
 			{
 				count++;
 				if (count == 4)
@@ -150,10 +184,11 @@ public class Connect4
 		}
 		//check Bottom-Right
 		offset = 0;
-		while (((row_move - offset) > 0) && ((column_move + offset) < 6))
+		while (((this.CurrentPlayers[player].get_last_row_move() - offset) > 0) && ((this.CurrentPlayers[player].get_last_column_move() + offset) < 6))
 		{
 			offset++;
-			if (gameboard[row_move - offset][column_move + offset] == Player)
+			if (gameboard[this.CurrentPlayers[player].get_last_row_move() - offset][this.CurrentPlayers[player].get_last_column_move() + offset] == this.CurrentPlayers[player]
+			        .getPlayerToken())
 			{
 				count++;
 				if (count == 4)
@@ -166,10 +201,11 @@ public class Connect4
 		count = 1;
 		offset = 0;
 		//check Top-Right
-		while (((row_move + offset) < 5) && ((column_move + offset) < 6))
+		while (((this.CurrentPlayers[player].get_last_row_move() + offset) < 5) && ((this.CurrentPlayers[player].get_last_column_move() + offset) < 6))
 		{
 			offset++;
-			if (gameboard[row_move + offset][column_move + offset] == Player)
+			if (gameboard[this.CurrentPlayers[player].get_last_row_move() + offset][this.CurrentPlayers[player].get_last_column_move() + offset] == this.CurrentPlayers[player]
+			        .getPlayerToken())
 			{
 				count++;
 				if (count == 4)
@@ -180,10 +216,11 @@ public class Connect4
 		}
 		//check Bottom-Left
 		offset = 0;
-		while (((row_move - offset) > 0) && ((column_move - offset) > 0))
+		while (((this.CurrentPlayers[player].get_last_row_move() - offset) > 0) && ((this.CurrentPlayers[player].get_last_column_move() - offset) > 0))
 		{
 			offset++;
-			if (gameboard[row_move - offset][column_move - offset] == Player)
+			if (gameboard[this.CurrentPlayers[player].get_last_row_move() - offset][this.CurrentPlayers[player].get_last_column_move() - offset] == this.CurrentPlayers[player]
+			        .getPlayerToken())
 			{
 				count++;
 				if (count == 4)

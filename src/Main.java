@@ -4,7 +4,6 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		char Players[] = { 'R', 'Y' };
 		int current_Player = 0;
 		Connect4 Game = new Connect4();
 		Scanner scan = new Scanner(System.in);
@@ -21,7 +20,7 @@ public class Main
 				{
 					s = scan.nextLine();
 					i = Integer.parseInt(s);
-					if (!Game.enterMove(i, Players[current_Player]))
+					if (!Game.enterMove(i, current_Player))
 					{
 						System.out.println("Invalid Move. Try Again");
 					}
@@ -36,7 +35,7 @@ public class Main
 				}
 			}
 			Game.printBoard();
-			if (Game.checkVictory(Players[current_Player]))
+			if (Game.checkVictory(current_Player))
 			{
 				System.out.println("Congradulations Player " + (current_Player + 1));
 				Game.changeGameStatus();
