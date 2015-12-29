@@ -867,3 +867,258 @@ INFO   | jvm 1    | 2015/12/28 23:08:58 |  INFO | Apache ActiveMQ 5.12.1 (localh
 INFO   | jvm 1    | 2015/12/28 23:08:58 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@57b8b654: startup date [Mon Dec 28 14:47:42 GMT 2015]; root of context hierarchy
 INFO   | jvm 1    | 2015/12/28 23:08:58 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
 STATUS | wrapper  | 2015/12/28 23:08:58 | <-- Wrapper Stopped
+STATUS | wrapper  | 2015/12/29 00:46:12 | --> Wrapper Started as Console
+STATUS | wrapper  | 2015/12/29 00:46:12 | Launching a JVM...
+INFO   | jvm 1    | 2015/12/29 00:46:12 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2015/12/29 00:46:12 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2015/12/29 00:46:12 | 
+INFO   | jvm 1    | 2015/12/29 00:46:13 | Java Runtime: Oracle Corporation 1.8.0_66 C:\Program Files\Java\jre1.8.0_66
+INFO   | jvm 1    | 2015/12/29 00:46:13 |   Heap sizes: current=249344k  free=234988k  max=932352k
+INFO   | jvm 1    | 2015/12/29 00:46:13 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=Qpq412_LgUa9BzZz -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=2708 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2015/12/29 00:46:13 | Extensions classpath:
+INFO   | jvm 1    | 2015/12/29 00:46:13 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2015/12/29 00:46:13 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2015/12/29 00:46:13 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2015/12/29 00:46:13 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2015/12/29 00:46:13 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2015/12/29 00:46:13 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2015/12/29 00:46:13 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3d83fdaa: startup date [Tue Dec 29 00:46:13 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 00:46:13 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2015/12/29 00:46:13 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Recovering from the journal @1:8595295
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Recovery replayed 2164 operations from the journal in 0.094 seconds.
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) is starting
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2015/12/29 00:46:14 | {}
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Connector ws started
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) started
+INFO   | jvm 1    | 2015/12/29 00:46:14 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2015/12/29 00:46:15 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2015/12/29 00:46:15 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2015/12/29 00:46:15 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2015/12/29 00:46:15 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+INFO   | jvm 1    | 2015/12/29 00:55:37 |  WARN | Transport Connection to: tcp://127.0.0.1:54761 failed: java.net.SocketException: Connection reset
+INFO   | jvm 1    | 2015/12/29 00:56:19 |  WARN | Transport Connection to: tcp://127.0.0.1:54776 failed: java.net.SocketException: Connection reset
+INFO   | jvm 1    | 2015/12/29 00:57:11 |  WARN | Transport Connection to: tcp://127.0.0.1:54773 failed: java.net.SocketException: Connection reset
+STATUS | wrapper  | 2015/12/29 01:15:06 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) is shutting down
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2015/12/29 01:15:08 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 01:15:08 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 01:15:08 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 01:15:08 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) uptime 28 minutes
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) is shutdown
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@3d83fdaa: startup date [Tue Dec 29 00:46:13 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 01:15:08 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
+STATUS | wrapper  | 2015/12/29 01:15:09 | <-- Wrapper Stopped
+STATUS | wrapper  | 2015/12/29 14:35:17 | --> Wrapper Started as Console
+STATUS | wrapper  | 2015/12/29 14:35:18 | Launching a JVM...
+INFO   | jvm 1    | 2015/12/29 14:35:19 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2015/12/29 14:35:19 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2015/12/29 14:35:19 | 
+INFO   | jvm 1    | 2015/12/29 14:35:19 | Java Runtime: Oracle Corporation 1.8.0_66 C:\Program Files\Java\jre1.8.0_66
+INFO   | jvm 1    | 2015/12/29 14:35:19 |   Heap sizes: current=249344k  free=234988k  max=932352k
+INFO   | jvm 1    | 2015/12/29 14:35:19 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=YfGwd4pOsygkbHNQ -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=708 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2015/12/29 14:35:19 | Extensions classpath:
+INFO   | jvm 1    | 2015/12/29 14:35:19 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2015/12/29 14:35:19 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2015/12/29 14:35:19 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2015/12/29 14:35:19 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2015/12/29 14:35:19 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2015/12/29 14:35:20 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2015/12/29 14:35:20 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:35:20 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 14:35:21 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2015/12/29 14:35:21 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Recovering from the journal @1:9305565
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Recovery replayed 44 operations from the journal in 0.05 seconds.
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) is starting
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:35:22 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2015/12/29 14:35:23 | {}
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | Connector ws started
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) started
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2015/12/29 14:35:23 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+STATUS | wrapper  | 2015/12/29 14:40:53 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) is shutting down
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2015/12/29 14:40:54 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:40:54 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:40:54 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:40:54 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) uptime 5 minutes
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) is shutdown
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:35:20 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 14:40:54 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
+STATUS | wrapper  | 2015/12/29 14:40:55 | <-- Wrapper Stopped
+STATUS | wrapper  | 2015/12/29 14:41:34 | --> Wrapper Started as Console
+STATUS | wrapper  | 2015/12/29 14:41:35 | Launching a JVM...
+INFO   | jvm 1    | 2015/12/29 14:41:35 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2015/12/29 14:41:35 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2015/12/29 14:41:35 | 
+INFO   | jvm 1    | 2015/12/29 14:41:35 | Java Runtime: Oracle Corporation 1.8.0_66 C:\Program Files\Java\jre1.8.0_66
+INFO   | jvm 1    | 2015/12/29 14:41:35 |   Heap sizes: current=249344k  free=234988k  max=932352k
+INFO   | jvm 1    | 2015/12/29 14:41:35 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=weKayb9vsMqT9dj0 -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5484 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2015/12/29 14:41:35 | Extensions classpath:
+INFO   | jvm 1    | 2015/12/29 14:41:35 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2015/12/29 14:41:35 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2015/12/29 14:41:35 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2015/12/29 14:41:35 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2015/12/29 14:41:35 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2015/12/29 14:41:35 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2015/12/29 14:41:35 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:41:35 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Recovering from the journal @1:9351654
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Recovery replayed 49 operations from the journal in 0.02 seconds.
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) is starting
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:41:36 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2015/12/29 14:41:36 | {}
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | Connector ws started
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) started
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2015/12/29 14:41:37 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+STATUS | wrapper  | 2015/12/29 14:44:58 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) is shutting down
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2015/12/29 14:44:59 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:44:59 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:44:59 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:44:59 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) uptime 3 minutes
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) is shutdown
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:41:35 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 14:44:59 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
+STATUS | wrapper  | 2015/12/29 14:45:00 | <-- Wrapper Stopped
+STATUS | wrapper  | 2015/12/29 14:45:09 | --> Wrapper Started as Console
+STATUS | wrapper  | 2015/12/29 14:45:09 | Launching a JVM...
+INFO   | jvm 1    | 2015/12/29 14:45:10 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2015/12/29 14:45:10 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2015/12/29 14:45:10 | 
+INFO   | jvm 1    | 2015/12/29 14:45:10 | Java Runtime: Oracle Corporation 1.8.0_66 C:\Program Files\Java\jre1.8.0_66
+INFO   | jvm 1    | 2015/12/29 14:45:10 |   Heap sizes: current=249344k  free=234988k  max=932352k
+INFO   | jvm 1    | 2015/12/29 14:45:10 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=FzIO6idjP_AupmV2 -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5468 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2015/12/29 14:45:10 | Extensions classpath:
+INFO   | jvm 1    | 2015/12/29 14:45:10 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2015/12/29 14:45:10 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2015/12/29 14:45:10 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2015/12/29 14:45:10 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2015/12/29 14:45:10 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2015/12/29 14:45:10 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2015/12/29 14:45:10 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@57b8b654: startup date [Tue Dec 29 14:45:10 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Recovering from the journal @1:9372972
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Recovery replayed 41 operations from the journal in 0.02 seconds.
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) is starting
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2015/12/29 14:45:11 | {}
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Connector ws started
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) started
+INFO   | jvm 1    | 2015/12/29 14:45:11 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2015/12/29 14:45:12 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2015/12/29 14:45:12 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2015/12/29 14:45:12 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2015/12/29 14:45:12 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+STATUS | wrapper  | 2015/12/29 14:48:39 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) is shutting down
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2015/12/29 14:48:40 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:48:40 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:48:40 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | socketQueue interuppted - stopping
+INFO   | jvm 1    | 2015/12/29 14:48:40 | ERROR | Could not accept connection : java.lang.InterruptedException
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) uptime 3 minutes
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) is shutdown
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@57b8b654: startup date [Tue Dec 29 14:45:10 GMT 2015]; root of context hierarchy
+INFO   | jvm 1    | 2015/12/29 14:48:40 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
+STATUS | wrapper  | 2015/12/29 14:48:41 | <-- Wrapper Stopped

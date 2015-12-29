@@ -1,2 +1,4 @@
 @echo off
-java -jar "jars/Client.jar"
+cd jars
+java -jar Client.jar
+cd ..

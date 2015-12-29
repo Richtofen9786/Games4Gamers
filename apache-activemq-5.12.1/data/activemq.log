@@ -651,3 +651,186 @@ java.lang.UnsupportedOperationException: Possible CSRF attack
 2015-12-28 23:08:58,154 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-51873-1451314063296-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-31
 2015-12-28 23:08:58,154 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@57b8b654: startup date [Mon Dec 28 14:47:42 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-31
 2015-12-28 23:08:58,185 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | Thread-31
+2015-12-29 00:46:13,164 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3d83fdaa: startup date [Tue Dec 29 00:46:13 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2015-12-29 00:46:13,819 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2015-12-29 00:46:13,835 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 00:46:14,271 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 00:46:14,287 | INFO  | Recovering from the journal @1:8595295 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 00:46:14,365 | INFO  | Recovery replayed 2164 operations from the journal in 0.094 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 00:46:14,521 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 00:46:14,568 | INFO  | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 00:46:14,568 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 00:46:14,583 | INFO  | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 00:46:14,583 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 00:46:14,583 | INFO  | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 00:46:14,583 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 00:46:14,583 | INFO  | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 00:46:14,583 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 00:46:14,739 | INFO  | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2015-12-29 00:46:14,739 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 00:46:14,739 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 00:46:14,739 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 00:46:14,973 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 00:46:14,989 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 00:46:15,020 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2015-12-29 00:46:15,270 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2015-12-29 00:55:37,746 | WARN  | Transport Connection to: tcp://127.0.0.1:54761 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54761@61616
+2015-12-29 00:56:19,717 | WARN  | Transport Connection to: tcp://127.0.0.1:54776 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54776@61616
+2015-12-29 00:57:11,697 | WARN  | Transport Connection to: tcp://127.0.0.1:54773 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54773@61616
+2015-12-29 01:15:08,438 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-31
+2015-12-29 01:15:08,438 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,438 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-31
+2015-12-29 01:15:08,438 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,438 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-31
+2015-12-29 01:15:08,438 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,438 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,438 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-31
+2015-12-29 01:15:08,438 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,438 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,438 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-31
+2015-12-29 01:15:08,438 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,448 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 01:15:08,519 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-31
+2015-12-29 01:15:08,521 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-31
+2015-12-29 01:15:08,521 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-31
+2015-12-29 01:15:08,521 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-31
+2015-12-29 01:15:08,521 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-31
+2015-12-29 01:15:08,921 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) uptime 28 minutes | org.apache.activemq.broker.BrokerService | Thread-31
+2015-12-29 01:15:08,921 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-54604-1451349974396-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-31
+2015-12-29 01:15:08,921 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@3d83fdaa: startup date [Tue Dec 29 00:46:13 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-31
+2015-12-29 01:15:08,941 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | Thread-31
+2015-12-29 14:35:20,803 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:35:20 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2015-12-29 14:35:21,853 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2015-12-29 14:35:21,873 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:35:22,634 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:35:22,674 | INFO  | Recovering from the journal @1:9305565 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:35:22,684 | INFO  | Recovery replayed 44 operations from the journal in 0.05 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:35:22,844 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:35:22,904 | INFO  | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:35:22,904 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:35:22,904 | INFO  | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:35:22,914 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:35:22,914 | INFO  | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:35:22,914 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:35:22,924 | INFO  | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:35:22,924 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:35:23,124 | INFO  | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2015-12-29 14:35:23,124 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:35:23,134 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:35:23,134 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:35:23,474 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 14:35:23,474 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 14:35:23,584 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2015-12-29 14:35:23,914 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2015-12-29 14:40:54,025 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-30
+2015-12-29 14:40:54,025 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,025 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:40:54,025 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,035 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:40:54,035 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,035 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,035 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:40:54,035 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,035 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,035 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:40:54,035 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,035 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:40:54,106 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:40:54,108 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-30
+2015-12-29 14:40:54,108 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-30
+2015-12-29 14:40:54,108 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-30
+2015-12-29 14:40:54,108 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-30
+2015-12-29 14:40:54,678 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) uptime 5 minutes | org.apache.activemq.broker.BrokerService | Thread-30
+2015-12-29 14:40:54,678 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49202-1451399722724-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-30
+2015-12-29 14:40:54,678 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:35:20 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-30
+2015-12-29 14:40:54,698 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | Thread-30
+2015-12-29 14:41:35,518 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:41:35 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2015-12-29 14:41:36,168 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2015-12-29 14:41:36,188 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:41:36,608 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:41:36,628 | INFO  | Recovering from the journal @1:9351654 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:41:36,638 | INFO  | Recovery replayed 49 operations from the journal in 0.02 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:41:36,768 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:41:36,828 | INFO  | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:41:36,828 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:41:36,838 | INFO  | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:41:36,838 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:41:36,838 | INFO  | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:41:36,848 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:41:36,848 | INFO  | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:41:36,848 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:41:37,008 | INFO  | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2015-12-29 14:41:37,008 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:41:37,008 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:41:37,008 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:41:37,258 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 14:41:37,258 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 14:41:37,298 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2015-12-29 14:41:37,538 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2015-12-29 14:44:59,319 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-30
+2015-12-29 14:44:59,319 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,319 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:44:59,319 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,319 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:44:59,319 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,319 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,319 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:44:59,319 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,319 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,319 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:44:59,319 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,329 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:44:59,400 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-30
+2015-12-29 14:44:59,402 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-30
+2015-12-29 14:44:59,402 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-30
+2015-12-29 14:44:59,402 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-30
+2015-12-29 14:44:59,402 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-30
+2015-12-29 14:44:59,752 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) uptime 3 minutes | org.apache.activemq.broker.BrokerService | Thread-30
+2015-12-29 14:44:59,752 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49298-1451400096658-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-30
+2015-12-29 14:44:59,752 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@5dc1df8b: startup date [Tue Dec 29 14:41:35 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-30
+2015-12-29 14:44:59,772 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | Thread-30
+2015-12-29 14:45:10,319 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@57b8b654: startup date [Tue Dec 29 14:45:10 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2015-12-29 14:45:10,969 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2015-12-29 14:45:10,989 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:45:11,369 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:45:11,389 | INFO  | Recovering from the journal @1:9372972 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:45:11,389 | INFO  | Recovery replayed 41 operations from the journal in 0.02 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-12-29 14:45:11,529 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:45:11,589 | INFO  | Listening for connections at: tcp://Valhalla:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:45:11,589 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:45:11,589 | INFO  | Listening for connections at: amqp://Valhalla:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:45:11,589 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:45:11,599 | INFO  | Listening for connections at: stomp://Valhalla:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:45:11,599 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:45:11,599 | INFO  | Listening for connections at: mqtt://Valhalla:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-12-29 14:45:11,599 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:45:11,759 | INFO  | Listening for connections at ws://Valhalla:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2015-12-29 14:45:11,759 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-12-29 14:45:11,759 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:45:11,759 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-12-29 14:45:11,999 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 14:45:11,999 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-12-29 14:45:12,039 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2015-12-29 14:45:12,309 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2015-12-29 14:48:40,422 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,422 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,422 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,422 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,422 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,422 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,422 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,422 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,422 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,422 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,422 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,422 | INFO  | socketQueue interuppted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,432 | ERROR | Could not accept connection : java.lang.InterruptedException | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2015-12-29 14:48:40,503 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,505 | INFO  | PListStore:[X:\Computer-Science\Eclipse-Workspace\Games4Gamers\apache-activemq-5.12.1\bin\win64\..\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,505 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,505 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,505 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,705 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) uptime 3 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,705 | INFO  | Apache ActiveMQ 5.12.1 (localhost, ID:Valhalla-49326-1451400311419-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,705 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@57b8b654: startup date [Tue Dec 29 14:45:10 GMT 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-12-29 14:48:40,735 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
